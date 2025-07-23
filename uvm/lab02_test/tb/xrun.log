@@ -1,0 +1,147 @@
+xrun(64): 24.09-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.09-s004: Started on Jul 22, 2025 at 18:09:23 EDT
+xrun
+	-f run.f
+		-64
+		-uvm
+		-incdir ../sv
+		../sv/yapp_pkg.sv
+		top.sv
+Loading snapshot worklib.top:sv .................... Done
+SVSEED default: 1
+xcelium> source /tools/software/cadence/xcelium/latest/tools/xcelium/files/xmsimrc
+xcelium> source /tools/software/cadence/xcelium/latest/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+----------------------------------------------------------------
+CDNS-UVM-1.1d (24.09-s004)
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+------------------------------------------------
+Name            Type           Size  Value      
+------------------------------------------------
+packet0         yapp_packet    -     @2354      
+  addr          integral       2     'h1        
+  length        integral       6     'h3c       
+  payload       da(integral)   60    -          
+    [0]         integral       8     'h8e       
+    [1]         integral       8     'hb        
+    [2]         integral       8     'h12       
+    [3]         integral       8     'he        
+    [4]         integral       8     'h87       
+    ...         ...            ...   ...        
+    [55]        integral       8     'h4b       
+    [56]        integral       8     'h6c       
+    [57]        integral       8     'hdf       
+    [58]        integral       8     'h71       
+    [59]        integral       8     'h3f       
+  parity        integral       8     'hf6       
+  parity_type   parity_type_e  1     GOOD_PARITY
+  packet_delay  integral       32    'd6        
+------------------------------------------------
+------------------------------------------------
+Name            Type           Size  Value      
+------------------------------------------------
+packet1         yapp_packet    -     @2443      
+  addr          integral       2     'h0        
+  length        integral       6     'h1b       
+  payload       da(integral)   27    -          
+    [0]         integral       8     'he5       
+    [1]         integral       8     'hc7       
+    [2]         integral       8     'hb        
+    [3]         integral       8     'hc6       
+    [4]         integral       8     'hf        
+    ...         ...            ...   ...        
+    [22]        integral       8     'h72       
+    [23]        integral       8     'h2f       
+    [24]        integral       8     'h68       
+    [25]        integral       8     'hb6       
+    [26]        integral       8     'h12       
+  parity        integral       8     'h73       
+  parity_type   parity_type_e  1     GOOD_PARITY
+  packet_delay  integral       32    'd15       
+------------------------------------------------
+------------------------------------------------
+Name            Type           Size  Value      
+------------------------------------------------
+packet2         yapp_packet    -     @2365      
+  addr          integral       2     'h0        
+  length        integral       6     'h3f       
+  payload       da(integral)   63    -          
+    [0]         integral       8     'hed       
+    [1]         integral       8     'h5        
+    [2]         integral       8     'hcd       
+    [3]         integral       8     'hb5       
+    [4]         integral       8     'h65       
+    ...         ...            ...   ...        
+    [58]        integral       8     'h12       
+    [59]        integral       8     'h67       
+    [60]        integral       8     'h5c       
+    [61]        integral       8     'hdf       
+    [62]        integral       8     'h79       
+  parity        integral       8     'h87       
+  parity_type   parity_type_e  1     GOOD_PARITY
+  packet_delay  integral       32    'd1        
+------------------------------------------------
+------------------------------------------------
+Name            Type           Size  Value      
+------------------------------------------------
+packet3         yapp_packet    -     @2354      
+  addr          integral       2     'h2        
+  length        integral       6     'h2d       
+  payload       da(integral)   45    -          
+    [0]         integral       8     'ha7       
+    [1]         integral       8     'hf9       
+    [2]         integral       8     'hc0       
+    [3]         integral       8     'h4e       
+    [4]         integral       8     'h7d       
+    ...         ...            ...   ...        
+    [40]        integral       8     'hd5       
+    [41]        integral       8     'hba       
+    [42]        integral       8     'hf9       
+    [43]        integral       8     'h28       
+    [44]        integral       8     'h6b       
+  parity        integral       8     'h12       
+  parity_type   parity_type_e  1     GOOD_PARITY
+  packet_delay  integral       32    'd3        
+------------------------------------------------
+------------------------------------------------
+Name            Type           Size  Value      
+------------------------------------------------
+packet4         yapp_packet    -     @2443      
+  addr          integral       2     'h2        
+  length        integral       6     'h2b       
+  payload       da(integral)   43    -          
+    [0]         integral       8     'h64       
+    [1]         integral       8     'hf8       
+    [2]         integral       8     'hb2       
+    [3]         integral       8     'h89       
+    [4]         integral       8     'hb3       
+    ...         ...            ...   ...        
+    [38]        integral       8     'h78       
+    [39]        integral       8     'h15       
+    [40]        integral       8     'hcc       
+    [41]        integral       8     'hfd       
+    [42]        integral       8     'h51       
+  parity        integral       8     'h5d       
+  parity_type   parity_type_e  1     GOOD_PARITY
+  packet_delay  integral       32    'd11       
+------------------------------------------------
+xmsim: *W,RNQUIE: Simulation is complete.
+xcelium> exit
+TOOL:	xrun(64)	24.09-s004: Exiting on Jul 22, 2025 at 18:09:24 EDT  (total: 00:00:01)
