@@ -25,4 +25,8 @@
 /tools/software/cadence/xcelium/latest/tools/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_deprecated_defines.svh
 /tools/software/cadence/xcelium/24.09.004/tools.lnx86/methodology/UVM/CDNS-1.1d/sv/src/macros/uvm_deprecated_defines.svh
 ../sv/yapp_packet.sv
-/nethome/kpatil43/uvma_training_1.2.6rev1-2/uvm/lab01_data/sv/yapp_packet.sv
+/nethome/kpatil43/uvma_training_1.2.6rev1-2/uvm/lab02_test/sv/yapp_packet.sv
+router_tb.sv
+/nethome/kpatil43/uvma_training_1.2.6rev1-2/uvm/lab02_test/tb/router_tb.sv
+router_test_lib.sv
+/nethome/kpatil43/uvma_training_1.2.6rev1-2/uvm/lab02_test/tb/router_test_lib.sv

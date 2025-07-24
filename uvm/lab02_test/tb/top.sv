@@ -18,42 +18,11 @@ module top;
 
   // import the YAPP package
   import yapp_pkg::*;
+  `include "router_tb.sv"
+  `include "router_test_lib.sv"
 
-  yapp_packet packet;
-  yapp_packet copy_packet;
-  yapp_packet clone_packet;
-
-  uvm_table_printer custom = new();
-
-  string name;
-  int ok;
-
-  initial begin
-  // construct the packet for copy
-  copy_packet = new("copy_packet");
-
-  for (int i=0; i<5; i++) begin
-    // allocate each packet
-    packet = new($sformatf("packet%0d",i));
-    ok = packet.randomize();
-    packet.print();
-  end
-
-//  custom.knobs.begin_elements = -1;
-//  packet.print(custom);
-
-/*
-
-  $display("\n\n\n\nCOPY");
-  // copy usage
-  copy_packet.copy(packet);
-  copy_packet.print();
-
-  $display("CLONE");
-  // clone usage
-  $cast(clone_packet, packet.clone()); 
-  clone_packet.print();
-*/
-end
+  initial
+    run_test();
+  
 
 endmodule : top

@@ -10,3 +10,9 @@ s4(22Jul2025:18:05:19):  xrun -f run.f
 s5(22Jul2025:18:07:39):  xrun -f run.f 
 #e6(22Jul2025:18:09:24): source ./xcelium.d/env.d/env.history.22Jul2025_18_09_24
 s6(22Jul2025:18:09:24):  xrun -f run.f 
+#e7(24Jul2025:13:39:36): source ./xcelium.d/env.d/env.history.24Jul2025_13_39_36
+s7(24Jul2025:13:39:36):  xrun -f run.f 
+#e8(24Jul2025:14:18:14): source ./xcelium.d/env.d/env.history.24Jul2025_14_18_14
+s8(24Jul2025:14:18:14):  xrun -f run.f 
+#e9(24Jul2025:14:21:31): source ./xcelium.d/env.d/env.history.24Jul2025_14_21_31
+s9(24Jul2025:14:21:31):  xrun -f run.f 

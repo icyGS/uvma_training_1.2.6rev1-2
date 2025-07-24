@@ -18,6 +18,10 @@ Copyright Cadence Design Systems (c)2015
 ../sv/yapp_pkg.sv
 top.sv
 
++UVM_TESTNAME=base_test
++UVM_VERBOSITY=UVM_LOW
+
+
 // compile files
 //*** add compile files here
 

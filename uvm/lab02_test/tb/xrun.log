@@ -1,5 +1,5 @@
 xrun(64): 24.09-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	24.09-s004: Started on Jul 22, 2025 at 18:09:23 EDT
+TOOL:	xrun(64)	24.09-s004: Started on Jul 24, 2025 at 14:21:30 EDT
 xrun
 	-f run.f
 		-64
@@ -7,6 +7,12 @@ xrun
 		-incdir ../sv
 		../sv/yapp_pkg.sv
 		top.sv
+		+UVM_TESTNAME=base_test
+		+UVM_VERBOSITY=UVM_LOW
+
+   User defined plus("+") options:
+	+UVM_VERBOSITY=UVM_LOW
+
 Loading snapshot worklib.top:sv .................... Done
 SVSEED default: 1
 xcelium> source /tools/software/cadence/xcelium/latest/tools/xcelium/files/xmsimrc
@@ -32,116 +38,36 @@ CDNS-UVM-1.1d (24.09-s004)
 
       (Specify +UVM_NO_RELNOTES to turn off this notice)
 
-------------------------------------------------
-Name            Type           Size  Value      
-------------------------------------------------
-packet0         yapp_packet    -     @2354      
-  addr          integral       2     'h1        
-  length        integral       6     'h3c       
-  payload       da(integral)   60    -          
-    [0]         integral       8     'h8e       
-    [1]         integral       8     'hb        
-    [2]         integral       8     'h12       
-    [3]         integral       8     'he        
-    [4]         integral       8     'h87       
-    ...         ...            ...   ...        
-    [55]        integral       8     'h4b       
-    [56]        integral       8     'h6c       
-    [57]        integral       8     'hdf       
-    [58]        integral       8     'h71       
-    [59]        integral       8     'h3f       
-  parity        integral       8     'hf6       
-  parity_type   parity_type_e  1     GOOD_PARITY
-  packet_delay  integral       32    'd6        
-------------------------------------------------
-------------------------------------------------
-Name            Type           Size  Value      
-------------------------------------------------
-packet1         yapp_packet    -     @2443      
-  addr          integral       2     'h0        
-  length        integral       6     'h1b       
-  payload       da(integral)   27    -          
-    [0]         integral       8     'he5       
-    [1]         integral       8     'hc7       
-    [2]         integral       8     'hb        
-    [3]         integral       8     'hc6       
-    [4]         integral       8     'hf        
-    ...         ...            ...   ...        
-    [22]        integral       8     'h72       
-    [23]        integral       8     'h2f       
-    [24]        integral       8     'h68       
-    [25]        integral       8     'hb6       
-    [26]        integral       8     'h12       
-  parity        integral       8     'h73       
-  parity_type   parity_type_e  1     GOOD_PARITY
-  packet_delay  integral       32    'd15       
-------------------------------------------------
-------------------------------------------------
-Name            Type           Size  Value      
-------------------------------------------------
-packet2         yapp_packet    -     @2365      
-  addr          integral       2     'h0        
-  length        integral       6     'h3f       
-  payload       da(integral)   63    -          
-    [0]         integral       8     'hed       
-    [1]         integral       8     'h5        
-    [2]         integral       8     'hcd       
-    [3]         integral       8     'hb5       
-    [4]         integral       8     'h65       
-    ...         ...            ...   ...        
-    [58]        integral       8     'h12       
-    [59]        integral       8     'h67       
-    [60]        integral       8     'h5c       
-    [61]        integral       8     'hdf       
-    [62]        integral       8     'h79       
-  parity        integral       8     'h87       
-  parity_type   parity_type_e  1     GOOD_PARITY
-  packet_delay  integral       32    'd1        
-------------------------------------------------
-------------------------------------------------
-Name            Type           Size  Value      
-------------------------------------------------
-packet3         yapp_packet    -     @2354      
-  addr          integral       2     'h2        
-  length        integral       6     'h2d       
-  payload       da(integral)   45    -          
-    [0]         integral       8     'ha7       
-    [1]         integral       8     'hf9       
-    [2]         integral       8     'hc0       
-    [3]         integral       8     'h4e       
-    [4]         integral       8     'h7d       
-    ...         ...            ...   ...        
-    [40]        integral       8     'hd5       
-    [41]        integral       8     'hba       
-    [42]        integral       8     'hf9       
-    [43]        integral       8     'h28       
-    [44]        integral       8     'h6b       
-  parity        integral       8     'h12       
-  parity_type   parity_type_e  1     GOOD_PARITY
-  packet_delay  integral       32    'd3        
-------------------------------------------------
-------------------------------------------------
-Name            Type           Size  Value      
-------------------------------------------------
-packet4         yapp_packet    -     @2443      
-  addr          integral       2     'h2        
-  length        integral       6     'h2b       
-  payload       da(integral)   43    -          
-    [0]         integral       8     'h64       
-    [1]         integral       8     'hf8       
-    [2]         integral       8     'hb2       
-    [3]         integral       8     'h89       
-    [4]         integral       8     'hb3       
-    ...         ...            ...   ...        
-    [38]        integral       8     'h78       
-    [39]        integral       8     'h15       
-    [40]        integral       8     'hcc       
-    [41]        integral       8     'hfd       
-    [42]        integral       8     'h51       
-  parity        integral       8     'h5d       
-  parity_type   parity_type_e  1     GOOD_PARITY
-  packet_delay  integral       32    'd11       
-------------------------------------------------
-xmsim: *W,RNQUIE: Simulation is complete.
+UVM_INFO @ 0: reporter [RNTST] Running test base_test...
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+------------------------------------
+Name          Type       Size  Value
+------------------------------------
+uvm_test_top  base_test  -     @2347
+------------------------------------
+
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    2
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[UVMTOP]     1
+Simulation complete via $finish(1) at time 0 FS + 179
+/tools/software/cadence/xcelium/latest/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_root.svh:457     $finish;
 xcelium> exit
-TOOL:	xrun(64)	24.09-s004: Exiting on Jul 22, 2025 at 18:09:24 EDT  (total: 00:00:01)
+TOOL:	xrun(64)	24.09-s004: Exiting on Jul 24, 2025 at 14:21:31 EDT  (total: 00:00:01)
